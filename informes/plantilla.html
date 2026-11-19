@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 1. Cambiá el título de la pestaña -->
+<title>[Título del informe] — Posdata:</title>
+<meta name="description" content="[Bajada del informe en una frase.]">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="../assets/posdata.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="../index.html" aria-label="Posdata: inicio"><span class="r">P</span>os<span class="r">d</span>ata<span class="dp" aria-hidden="true"></span></a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="../index.html#informes">Informes</a></li>
+        <li><a href="../index.html#servicios">Servicios</a></li>
+        <li><a href="../index.html#sobre-mi">Sobre mí</a></li>
+        <li><a href="../index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- 2. Cabecera del informe -->
+  <div class="informe-cabecera">
+    <div class="wrap">
+      <span class="etiqueta">Informe mensual · N° 01 · [MES 2026]</span>
+      <h1>[Título del informe]</h1>
+      <p class="bajada">[Bajada: una o dos líneas sobre la pregunta que responde el informe.]</p>
+      <p class="firma">Por Diego Tomás Araujo Poumé</p>
+    </div>
+  </div>
+
+  <article class="informe">
+    <!-- 3. Cuerpo. Copiá un bloque <h2> + <p> por cada sección -->
+    <div class="barra" aria-hidden="true"></div>
+    <p>[Primer párrafo: el contexto y la pregunta del mes. Oraciones cortas. Si querés destacar una cifra en el texto, ponela así: <strong>00,0 %</strong>.]</p>
+
+    <h2>[Primera sección]</h2>
+    <p>[Desarrollo de la sección.]</p>
+
+    <!-- 4. Gráfico: reemplazá el bloque .lugar por tu imagen, por ejemplo <img src="img/01-grafico.png" alt="Descripción del gráfico"> -->
+    <figure class="figura">
+      <div class="lugar">[Acá va el gráfico]</div>
+      <figcaption>Gráfico 1. [Qué muestra el gráfico]. Fuente: [FUENTE, FECHA].</figcaption>
+    </figure>
+
+    <h2>[Segunda sección]</h2>
+    <p>[Desarrollo de la sección.]</p>
+
+    <!-- 5. La posdata: el dato que cambia la lectura -->
+    <aside class="pd" aria-label="Posdata del informe">
+      <span class="etiqueta">P.D.</span>
+      <span class="cifra">[00,0 %]</span>
+      <p>[El dato que cambia la lectura, en una frase.]</p>
+      <span class="fuente">Fuente: [FUENTE, FECHA]</span>
+    </aside>
+
+    <!-- 6. Fuentes y metodología -->
+    <section class="metodologia" aria-label="Fuentes y metodología">
+      <h2>Fuentes y metodología</h2>
+      <ul>
+        <li>[Fuente 1: nombre, organismo, período.]</li>
+        <li>[Notas sobre el procesamiento: deflactores, ponderadores, etc.]</li>
+      </ul>
+    </section>
+
+    <a class="volver" href="../index.html#informes">← Volver a todos los informes</a>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="logo"><span class="r">P</span>os<span class="r">d</span>ata<span class="dp" aria-hidden="true"></span></span>
+    <span>Ah, y una cosa más: el dato. · © 2026 Diego Tomás Araujo Poumé</span>
+  </div>
+</footer>
+
+</body>
+</html>

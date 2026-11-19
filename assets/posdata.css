@@ -1,0 +1,135 @@
+:root{
+  --abismo:#013440; --petroleo:#234D68; --pizarra:#566B81;
+  --rosa:#F66C89; --rosa-texto:#C7375A; --papel:#F5F3F0;
+  --tinta-suave-osc:#A9B6C3; --linea:#C9CED4;
+  --serif:"Instrument Serif", Georgia, serif;
+  --mono:"IBM Plex Mono", ui-monospace, monospace;
+  --sans:"IBM Plex Sans", system-ui, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--papel);color:var(--abismo);font-family:var(--sans);font-size:16px;line-height:1.6}
+a{color:var(--rosa-texto)}
+a:hover{color:var(--abismo)}
+img{max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.etiqueta{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase}
+
+/* Logo: P, d y dos puntos en rosa */
+.logo{font-family:var(--serif);font-weight:400;line-height:1;letter-spacing:-.02em;white-space:nowrap}
+.logo .r{color:var(--rosa)}
+.dp{display:inline-block;position:relative;width:.16em;height:.46em;margin-left:.04em;vertical-align:baseline}
+.dp::before,.dp::after{content:"";position:absolute;border-radius:50%;background:var(--rosa)}
+.dp::before{top:0;left:.02em;width:.12em;height:.12em}
+.dp::after{bottom:0;left:0;width:.16em;height:.16em}
+
+/* Encabezado */
+header{background:var(--abismo);color:var(--papel);position:sticky;top:0;z-index:10;border-bottom:1px solid var(--petroleo)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;min-height:68px;padding-top:10px;padding-bottom:10px}
+header .logo{font-size:32px;color:var(--papel);text-decoration:none}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px;flex-wrap:wrap}
+nav a{display:inline-block;padding:10px 12px;color:var(--papel);text-decoration:none;font-family:var(--mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+nav a:hover,nav a:focus-visible{color:var(--rosa)}
+
+/* Portada */
+.hero{background:var(--abismo);color:var(--papel);padding:96px 0 112px}
+.hero .logo{font-size:clamp(72px,14vw,168px);display:block}
+.hero .slogan{font-family:var(--serif);font-style:italic;font-size:clamp(24px,3.4vw,34px);line-height:1.2;margin:24px 0 0}
+.hero .slogan em{color:var(--rosa)}
+.hero p.intro{max-width:600px;margin:28px 0 0;font-size:18px;color:var(--tinta-suave-osc)}
+.boton{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:4px;font-family:var(--mono);font-size:14px;font-weight:500;letter-spacing:.04em;text-decoration:none}
+.boton-rosa{background:var(--rosa);color:var(--abismo)}
+.boton-rosa:hover{background:var(--papel);color:var(--abismo)}
+.boton-linea{border:1px solid var(--papel);color:var(--papel)}
+.boton-linea:hover{border-color:var(--rosa);color:var(--rosa)}
+.acciones{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
+
+/* Secciones */
+section{padding:88px 0}
+.titulo-seccion{display:flex;flex-direction:column;gap:12px;margin-bottom:40px}
+.titulo-seccion .etiqueta{color:var(--pizarra)}
+.titulo-seccion .barra{width:48px;height:4px;background:var(--rosa)}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(36px,5vw,52px);line-height:1.05;margin:0}
+h3{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.1;margin:0}
+
+/* Último informe */
+.destacado{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px;align-items:stretch}
+.destacado .texto{display:flex;flex-direction:column;gap:16px}
+.destacado .meta{color:var(--pizarra)}
+.destacado h3{font-size:clamp(34px,4.5vw,48px)}
+.destacado .bajada{font-size:18px;color:var(--pizarra);margin:0}
+.pd{background:var(--abismo);color:var(--papel);padding:32px;display:flex;flex-direction:column;justify-content:center;gap:10px;min-height:260px}
+.pd .etiqueta{color:var(--rosa);font-size:14px}
+.pd .cifra{font-family:var(--mono);font-weight:500;font-size:clamp(56px,8vw,80px);line-height:1;color:var(--rosa)}
+.pd p{margin:0;font-size:16px}
+.pd .fuente{font-size:13px;color:var(--tinta-suave-osc)}
+
+/* Archivo */
+.archivo{list-style:none;margin:0;padding:0;border-top:1px solid var(--linea)}
+.archivo li{border-bottom:1px solid var(--linea)}
+.archivo a{display:grid;grid-template-columns:72px 1fr auto;gap:16px;align-items:baseline;padding:22px 0;text-decoration:none;color:var(--abismo)}
+.archivo a:hover h3{color:var(--rosa-texto)}
+.archivo .num{font-family:var(--mono);color:var(--pizarra);font-size:14px}
+.archivo h3{font-size:26px}
+.archivo .fecha{font-family:var(--mono);font-size:13px;color:var(--pizarra)}
+.vacio{padding:22px 0;color:var(--pizarra);font-size:15px}
+
+/* Servicios */
+.servicios{background:var(--abismo);color:var(--papel)}
+.servicios .titulo-seccion .etiqueta{color:var(--tinta-suave-osc)}
+.servicios .lead{max-width:640px;font-size:18px;color:var(--tinta-suave-osc);margin:-16px 0 40px}
+.grilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:2px;background:var(--petroleo);border:2px solid var(--petroleo)}
+.servicio{background:var(--abismo);padding:32px;display:flex;flex-direction:column;gap:12px}
+.servicio .num{font-family:var(--mono);color:var(--rosa);font-size:14px}
+.servicio p{margin:0;color:var(--tinta-suave-osc)}
+
+/* Sobre mí */
+.sobre{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:48px;align-items:start}
+.monograma{width:160px;height:160px;border-radius:50%;background:var(--abismo);display:flex;align-items:center;justify-content:center}
+.monograma .logo{font-size:84px;color:var(--rosa)}
+.monograma .dp::before,.monograma .dp::after{background:var(--rosa)}
+.sobre p{margin:0 0 16px;font-size:17px}
+.datos{list-style:none;padding:0;margin:24px 0 0;display:flex;flex-direction:column;gap:10px}
+.datos li{display:flex;gap:12px;align-items:baseline}
+.datos li::before{content:"";flex:0 0 8px;height:8px;border-radius:50%;background:var(--rosa);transform:translateY(-2px)}
+
+/* Contacto */
+.contacto{background:var(--petroleo);color:var(--papel)}
+.contacto .titulo-seccion .etiqueta{color:var(--tinta-suave-osc)}
+.contacto p{max-width:560px;font-size:18px;margin:0 0 28px}
+.canales{display:flex;flex-direction:column;gap:12px;font-family:var(--mono);font-size:16px}
+.canales a{color:var(--papel)}
+.canales a:hover{color:var(--rosa)}
+.canales span{color:var(--tinta-suave-osc);display:inline-block;min-width:96px}
+
+footer{background:var(--abismo);color:var(--tinta-suave-osc);padding:40px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer .logo{font-size:28px;color:var(--papel)}
+
+@media (max-width:640px){
+  header .wrap{justify-content:center}
+  .hero{padding:64px 0 80px}
+  section{padding:64px 0}
+  .archivo a{grid-template-columns:1fr;gap:4px}
+}
+:focus-visible{outline:2px solid var(--rosa);outline-offset:3px}
+
+/* Página de informe */
+.informe-cabecera{background:var(--abismo);color:var(--papel);padding:72px 0 64px}
+.informe-cabecera .etiqueta{color:var(--tinta-suave-osc)}
+.informe-cabecera h1{font-family:var(--serif);font-weight:400;font-size:clamp(40px,6vw,64px);line-height:1.05;margin:16px 0 0;max-width:820px}
+.informe-cabecera .bajada{font-size:20px;color:var(--tinta-suave-osc);max-width:680px;margin:20px 0 0}
+.informe-cabecera .firma{margin-top:28px;font-family:var(--mono);font-size:13px;color:var(--tinta-suave-osc)}
+.informe{max-width:720px;margin:0 auto;padding:64px 24px 24px}
+.informe p,.informe li{font-size:18px;line-height:1.7}
+.informe h2{font-size:clamp(30px,4vw,38px);margin:48px 0 16px}
+.informe .barra{width:48px;height:4px;background:var(--rosa);margin-bottom:24px}
+.informe strong{color:var(--rosa-texto);font-weight:600}
+.figura{margin:40px 0;padding:24px;border:1px solid var(--linea);background:#fff}
+.figura .lugar{min-height:240px;display:flex;align-items:center;justify-content:center;color:var(--pizarra);font-family:var(--mono);font-size:14px;border:1px dashed var(--linea);text-align:center;padding:16px}
+.figura figcaption{margin-top:12px;font-size:14px;color:var(--pizarra)}
+.informe .pd{margin:56px 0}
+.metodologia{border-top:1px solid var(--linea);margin-top:56px;padding-top:24px}
+.metodologia h2{font-size:26px;margin-top:0}
+.metodologia p,.metodologia li{font-size:15px;color:var(--pizarra)}
+.volver{display:inline-block;margin:24px 0 72px;font-family:var(--mono);font-size:14px}
