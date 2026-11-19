@@ -33,16 +33,24 @@ nav a:hover,nav a:focus-visible{color:var(--rosa)}
 
 /* Portada */
 .hero{background:var(--abismo);color:var(--papel);padding:96px 0 112px}
-.hero .logo{font-size:clamp(72px,14vw,168px);display:block}
-.hero .slogan{font-family:var(--serif);font-style:italic;font-size:clamp(24px,3.4vw,34px);line-height:1.2;margin:24px 0 0}
+.hero .antetitulo{color:var(--tinta-suave-osc);display:block;margin-bottom:20px}
+.hero .titular{font-family:var(--serif);font-weight:400;font-size:clamp(48px,8vw,96px);line-height:1;letter-spacing:-.02em;margin:0;max-width:900px}
+.hero .slogan{font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.2;margin:56px 0 0;color:var(--tinta-suave-osc)}
 .hero .slogan em{color:var(--rosa)}
-.hero p.intro{max-width:600px;margin:28px 0 0;font-size:18px;color:var(--tinta-suave-osc)}
+.hero p.intro{max-width:620px;margin:28px 0 0;font-size:20px;line-height:1.55;color:var(--papel)}
 .boton{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:4px;font-family:var(--mono);font-size:14px;font-weight:500;letter-spacing:.04em;text-decoration:none}
 .boton-rosa{background:var(--rosa);color:var(--abismo)}
 .boton-rosa:hover{background:var(--papel);color:var(--abismo)}
 .boton-linea{border:1px solid var(--papel);color:var(--papel)}
 .boton-linea:hover{border-color:var(--rosa);color:var(--rosa)}
-.acciones{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
+.acciones{display:flex;gap:20px 28px;flex-wrap:wrap;align-items:center;margin-top:40px}
+.boton-grande{min-height:56px;padding:16px 30px;font-size:16px}
+.enlace-secundario{color:var(--papel);font-size:16px;text-decoration:underline;text-underline-offset:4px;padding:12px 0}
+.enlace-secundario:hover{color:var(--rosa)}
+.boton-oscuro{background:var(--abismo);color:var(--papel)}
+.boton-oscuro:hover{background:var(--petroleo);color:var(--papel)}
+.seguir{margin-top:40px;padding:28px 32px;background:#fff;border:1px solid var(--linea);display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.seguir p{margin:0;font-size:17px;max-width:560px}
 
 /* Secciones */
 section{padding:88px 0}
@@ -107,6 +115,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
 footer .logo{font-size:28px;color:var(--papel)}
 
 @media (max-width:640px){
+  header{position:static}
   header .wrap{justify-content:center}
   .hero{padding:64px 0 80px}
   section{padding:64px 0}
